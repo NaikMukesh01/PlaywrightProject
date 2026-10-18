@@ -59,7 +59,7 @@ public class playwrightFactory {
                 break;
             case "chrome":
                // browser=playwright.chromium().launch(new BrowserType.LaunchOptions().setChannel("chrome").setHeadless(false));
-                tlBrowser.set(getPlaywright().chromium().launch(new BrowserType.LaunchOptions().setChannel("chrome").setHeadless(false)));
+                tlBrowser.set(getPlaywright().chromium().launch(new BrowserType.LaunchOptions().setChannel("chrome").setHeadless(true)));
                 break;
             default:
                 System.out.println("Invalid Browser Name: " + browserName);
